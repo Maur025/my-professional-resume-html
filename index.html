@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My professional resume</title>
+		<title>Mi currículum profesional</title>
 
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body class="main">
-		<nav>
+	<body>
+		<nav class="navbar" aria-label="Navegación principal">
 			<ul>
-				<li>Una breve presentación</li>
-				<li>Experiencia laboral</li>
-				<li>Educación</li>
-				<li>Habilidades</li>
-				<li>Proyectos</li>
-				<li>Contacto</li>
+				<li><a href="#description">Una breve presentación</a></li>
+				<li><a href="#experience">Experiencia laboral</a></li>
+				<li><a href="#education">Educación</a></li>
+				<li><a href="#skills">Habilidades</a></li>
+				<li><a href="#projects">Proyectos</a></li>
+				<li><a href="#contact">Contacto</a></li>
 			</ul>
 		</nav>
-		<main>
-			<section>
+
+		<main class="main">
+			<section id="personal-info">
+				<h1>Mauro Eduardo Moya Palli (<small>26 años</small>)</h1>
+				<p></p>
+				<p>Desarrollador de Software</p>
+			</section>
+
+			<section id="description">
 				<h2>Una breve presentación</h2>
 
 				<p>
-					Un saludo, soy un desarrollador de software apasionado por crear
-					soluciones innovadoras y eficientes. Estoy siempre en busca de nuevos
-					desafíos y oportunidades para aprender y crecer en mi carrera.
+					Soy un desarrollador de software apasionado por crear soluciones
+					innovadoras y eficientes. Estoy siempre en busca de nuevos desafíos y
+					oportunidades para aprender y crecer en mi carrera.
 				</p>
 			</section>
 
-			<section>
+			<section id="experience">
 				<h2>Experiencia laboral</h2>
 
 				<p>
@@ -42,7 +49,7 @@
 				</p>
 			</section>
 
-			<section>
+			<section id="education">
 				<h2>Educación</h2>
 
 				<p>
@@ -53,48 +60,77 @@
 				</p>
 			</section>
 
-			<section>
-        <h2>Habilidades</h2>
+			<section id="skills">
+				<h2>Habilidades</h2>
 
-        <ul>
-          <li>Lenguajes de programación: Typescript, Java, Python</li>
-          <li>Frameworks y librerías: React, Angular, Spring Boot, Node.js, Express, Nest, Django</li>
-          <li>Bases de datos: PostgreSQL, MongoDB, Redis</li>
-          <li>Control de versiones: Git, GitHub</li>
-          <li>Metodologías ágiles: Scrum, Kanban</li>
-          <li>Conocimientos varios en: Docker, Kafka, sockets, github actions</li>
-      </section>
+				<ul>
+					<li>
+						<strong>Lenguajes de programación:</strong> Typescript, Java, Python
+					</li>
+					<li>
+						<strong>Frameworks y librerías:</strong> React, Angular, Spring
+						Boot, Node.js, Express, Nest, Django
+					</li>
+					<li><strong>Bases de datos:</strong> PostgreSQL, MongoDB, Redis</li>
+					<li><strong>Control de versiones:</strong> Git, GitHub</li>
+					<li><strong>Metodologías ágiles:</strong> Scrum, Kanban</li>
+					<li>
+						<strong>Conocimientos varios en:</strong> Docker, Kafka, sockets,
+						GitHub Actions
+					</li>
+				</ul>
+			</section>
 
-      <section>
-        <h2>Proyectos</h2>
+			<section id="projects">
+				<h2>Proyectos</h2>
 
-        <ul>
-          <li>
-            <strong>Aplicacion de reastreo de personal:</strong> Una aplicación web para rastrear la ubicación y actividades del personal en tiempo real, utilizando tecnologías como Angular, Node.js(express) y PostgreSQL.
-          </li>
-          <li>
-            <strong>ERP para multiples empresas:</strong> Sistema enfocado en controlar todo el flujo de trabajo de uno o varias empresas, desde la gestion de inventarios hasta la facturacion y contabilidad, desarrollado con Angular, Spring Boot y PostgreSQL, cada modulo del ERP es un microservicio, y los microservicios se comunican por kafka.
-          </li>
-          <li>
-            <strong>ERP enfocado en una vidrieria:</strong> Un sistema de gestión para una vidriería, que incluye módulos para la gestión de inventarios, ventas y compras, desarrollado con React, Express y MongoDB.
-          </li>
-        </ul>
-      </section>
+				<ul>
+					<li>
+						<h3>Aplicacion de reastreo de personal:</h3>
+						Una aplicación web para rastrear la ubicación y actividades del
+						personal en tiempo real, utilizando tecnologías como Angular,
+						Node.js(express) y PostgreSQL.
+					</li>
+					<li>
+						<h3>ERP para múltiples empresas:</h3>
+						Sistema enfocado en controlar todo el flujo de trabajo de uno o
+						varias empresas, desde la gestion de inventarios hasta la
+						facturacion y contabilidad, desarrollado con Angular, Spring Boot y
+						PostgreSQL, cada modulo del ERP es un microservicio, y los
+						microservicios se comunican por kafka.
+					</li>
+					<li>
+						<h3>ERP enfocado en una vidrieria:</h3>
+						Un sistema de gestión para una vidriería, que incluye módulos para
+						la gestión de inventarios, ventas y compras, desarrollado con React,
+						Express y MongoDB.
+					</li>
+				</ul>
+			</section>
 
-      <section>
-        <h2>Contacto</h2>
+			<section id="contact">
+				<h2>Contacto</h2>
 
-        <p>
-          Puedes contactarme a través de mis redes sociales o por correo
-          electrónico.
-        </p>
+				<p>
+					Puedes contactarme a través de mis redes sociales o por correo
+					electrónico.
+				</p>
 
-        <ul>
-          <li>Email: maur025@example.com</li>
-          <li>LinkedIn: linkedin.com/in/maur025</li>
-          <li>GitHub: github.com/maur025</li>
-        </ul>
-      </section>
+				<ul>
+					<li>
+						Email:
+						<a href="mailto:mmoyapalli@gmail.com">mmoyapalli@gmail.com</a>
+					</li>
+					<li>
+						LinkedIn:
+						<a
+							href="https://www.linkedin.com/in/mauro-eduardo-moya-palli-10520b188"
+							>Mauro Eduardo Moya Palli</a
+						>
+					</li>
+					<li>GitHub: <a href="https://github.com/maur025">maur025</a></li>
+				</ul>
+			</section>
 		</main>
 		<footer>Copyright © Maur025, 2025</footer>
 	</body>
